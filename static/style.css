@@ -1,8 +1,8 @@
-img {
+.hi {
     height: 35%;;
     width: 35%;
-    max-width: 200px;
-    max-height: 200px;
+    max-height: 20px;
+    max-width: 100px;
 }
 
 h1 {
@@ -13,9 +13,22 @@ h1 {
     justify-content: center;
 
 }
-.elements {
+.yes {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    height: 100px;
+    padding-left: 30px;
+    width: 100px;
+    vertical-align: top;
+    box-shadow: -1px 2px 0.2em gray;
+
+}
+
+.table {
+    display:inline-block
+    width: 30px;
+}
+
+.cell {
+    display: flex
 }

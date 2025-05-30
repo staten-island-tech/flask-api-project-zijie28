@@ -8,11 +8,23 @@
     </head>
     <body>
         <h1>Random pictures of food</h1>
-        {% for i in cat %}
-        <div class="elements">
-            <a href="http://127.0.0.1:5000/{{i}}">Here is a random picture of {{i}}</a>
-            <img src="{{picture}}" class="hi">
-            <div>
-        {% endfor %}
+        <div>
+            
+            <div class="elements">
+                {% for i in cat %}
+                <div class="yes">
+                    <div class="table">
+                        <div class="cell">   
+                            <a href="http://127.0.0.1:5000/{{i}}">Here is a random picture of {{i}}</a>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <img class='hi' src={{picture[loop.index0]}}> 
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </body>
 </html>

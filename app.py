@@ -6,12 +6,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    response = requests.get("https://foodish-api.com/api")
+    
     cat = ["biryani", "butter-chicken", "dosa", "pasta", "rice", "burger", "dessert", "idly", "pizza", "samosa"]
-    b = random.choice(cat)
-    data = response.json()
-    e=data['image']
-    return render_template("index.html", picture=e, cata=b, cat=cat)
+    e=[]
+    for i in cat:
+        response = requests.get(f"https://foodish-api.com/api/images/{i}")
+        data = response.json()
+        e.append(data['image'])
+    return render_template("index.html", picture=e, cata=i, cat=cat)
 @app.route("/<catagories>")
 def spec_cata(catagories):
     response = requests.get(f"https://foodish-api.com/api/images/{catagories}/")
