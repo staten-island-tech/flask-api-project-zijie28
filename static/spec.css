@@ -1,9 +1,61 @@
-.boo {
-    height: 35%;
-    width: 35%;
+.pic {
+    height: 600px;
+    width: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.pic_container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 h1 {
     font-family: 'Segoe UI', sans-serif;
     font-weight: 400;
+    font-size: 50px;
+    text-align: center;
 }
+
+.button_home {
+  display: inline-block;
+  background-color: #f7cdcd;  
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: rgb(110, 110, 110);                   
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button_refresh {
+  display: inline-block;
+  background-color: #f7cdcd;  
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: rgb(110, 110, 110);                   
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.buttons {
+display: flex;
+  gap: 15px;          
+  justify-content: center;  
+  margin-top: 15px;   
+  width: 100%;
+  max-width: 500px; 
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px;
+}
+

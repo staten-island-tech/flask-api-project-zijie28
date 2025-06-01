@@ -7,11 +7,14 @@
         <link rel="stylesheet" href="../static/spec.css">
     </head>
     <body>
-        <div>
-            <h1>Random pictures of {{food_type}}</h1>
-            <a href="http://127.0.0.1:5000/">Here is a link back home</a>
-            <div>
-                <img src="{{spec_pict}}" class="boo">                
+        <div class="page">
+            <h1>Random pictures of {{ food_type | capitalize}}</h1>
+            <div class="pic_container">
+                <img src="{{spec_pict}}" class="pic">                
+            </div>
+            <div class="buttons">
+            <a href="{{ url_for('index') }}" class="button_home">Back home</a>
+            <a href="{{ url_for('spec_cata', catagories=food_type) }}" class="button_refresh">Refresh</a>
             </div>
         </div>
     </body>

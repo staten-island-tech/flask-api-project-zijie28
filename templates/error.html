@@ -3,12 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Random pictures of food</title>
+        <title>Error</title>
+        <link rel="stylesheet" href="../static/error.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <h1>Error: incorrrect input</h1>
-            <a href="http://127.0.0.1:5000/">Back to home</a>
+        <div class="home">
+            <h1>Error: incorrrect input (≧◡≦)</h1>
+            <p class="para">
+                Uh Oh! ｡◕‿◕｡ You have entered an incorrect input! (๑˃ᴗ˂)ﻭ
+            </p>
+            <div class="button_contain">
+            <a href="{{ url_for('index') }}" class="button_home">Back to home (⁄ ⁄•⁄ω⁄•⁄ ⁄)</a>
+            </div>
         </div>
     </body>
 </html>
